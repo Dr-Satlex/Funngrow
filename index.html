@@ -1,150 +1,1019 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Core SEO Meta Tags -->
-    <title>Earn Money Online for Students in India | Funngro</title>
-    <meta name="description" content="Complete real client projects, learn professional skills, and start freelancing before college. Your future starts today with Funngro.">
-    <meta name="keywords" content="Earn money as a student, Student freelancing India, Paid internships for teenagers, Teen freelancing platform">
-    <link rel="canonical" href="https://www.funngro.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Funngro | Earn Your First Income Before You Turn 18</title>
+<meta name="description" content="Play through a 5-minute journey and see how students in India earn real money on Funngro — complete projects, learn skills, build a portfolio and become a business leader.">
+<meta name="keywords" content="earn money as a student, student freelancing India, paid internships for teenagers, online projects for students, learn while earning, teen freelancing platform, skill-based earning, student entrepreneurship">
+<meta name="theme-color" content="#0B140F">
+<link rel="canonical" href="https://www.funngro.com/">
+<!-- Replace the canonical URL above with your final deployed URL (GitHub Pages or custom domain) before launch -->
+<link rel="icon" type="image/png" href="assets/funngro-icon.png">
+<link rel="apple-touch-icon" href="funngro-icon.png">
 
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="Earn Your First Income Before You Turn 18">
-    <meta property="og:description" content="Experience a 5-minute playable journey of your future freelance career.">
-    
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Funngro",
-      "url": "https://www.funngro.com",
-      "logo": "https://www.funngro.com/assets/svg/funngro-logo.svg",
-      "sameAs": [
-        "https://www.instagram.com/fun.n.gro",
-        "https://www.linkedin.com/company/funngro/",
-        "https://www.youtube.com/@funngro_India",
-        "https://x.com/funngroofficial",
-        "https://www.facebook.com/funngro"
-      ]
-    }
-    </script>
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Funngro">
+<meta property="og:title" content="Earn Your First Income Before You Turn 18 | Funngro">
+<meta property="og:description" content="Complete real projects. Learn real skills. Build your portfolio. Start your career with Funngro.">
+<meta property="og:image" content="funngro-icon.png">
+<meta property="og:url" content="https://www.funngro.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Earn Your First Income Before You Turn 18 | Funngro">
+<meta name="twitter:description" content="Play a 5-minute journey and feel what it's like to earn, learn and lead with Funngro.">
+<meta name="twitter:image" content="funngro-icon.png">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- External Libraries: GSAP, CountUp, Howler -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" defer></script>
-    
-    <!-- Application Logic -->
-    <script src="app.js" defer></script>
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Funngro",
+  "url": "https://www.funngro.com/",
+  "logo": "https://www.funngro.com/funngro-icon.png",
+  "sameAs": [
+    "https://www.instagram.com/fun.n.gro",
+    "https://www.linkedin.com/company/funngro/",
+    "https://www.youtube.com/@funngro_India",
+    "https://www.facebook.com/funngro/",
+    "https://x.com/funngroofficial",
+    "https://whatsapp.com/channel/0029VaC43g0DTkK1Q83jMy2N",
+    "https://www.reddit.com/r/Funngro/",
+    "https://www.snapchat.com/add/funngrocrew",
+    "https://funngro.quora.com/",
+    "https://mojapp.in/@officialfunngro"
+  ]
+}
+</script>
+
+<!--
+  FONT NOTE: Funngro's official brand font file was not supplied with this build.
+  Poppins (display) + Inter (body) are used as close, license-free stand-ins that
+  match the rounded, geometric, fintech-friendly feel of the logo. To switch to
+  the real brand font, add an @font-face block at the top of the <style> tag and
+  update --font-display / --font-body below. No other typefaces are used anywhere
+  in this file.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   TOKENS — every colour on this page comes from these three
+   brand values (plus pure white/black for text contrast).
+   ========================================================= */
+:root{
+  --green:      #07AB5F;   /* Green Haze  — primary action / brand */
+  --green-rgb:  7,171,95;
+  --light:      #5FDD96;   /* Pastel Green — accents, gradients, success */
+  --light-rgb:  95,221,150;
+  --dark:       #0B140F;   /* Racing Green — background / ink */
+  --dark-rgb:   11,20,15;
+  --white:      #FFFFFF;
+
+  --font-display: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --radius: 20px;
+  --radius-sm: 12px;
+  --ease: cubic-bezier(.22,1,.36,1);
+  --fast: .25s;
+  --mid: .45s;
+}
+
+/* =========================================================
+   RESET
+   ========================================================= */
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body{
+  font-family: var(--font-body);
+  background: var(--dark);
+  color: var(--white);
+  min-height:100svh;
+  overflow-x:hidden;
+  line-height:1.5;
+}
+img{ max-width:100%; display:block; }
+button{ font-family:inherit; cursor:pointer; border:none; background:none; color:inherit; }
+input{ font-family:inherit; }
+a{ color:inherit; }
+h1,h2,h3{ font-family: var(--font-display); line-height:1.15; }
+
+.sr-only{
+  position:absolute; width:1px; height:1px; overflow:hidden;
+  clip:rect(0 0 0 0); white-space:nowrap; border:0; padding:0; margin:-1px;
+}
+.skip-link{
+  position:absolute; left:0; top:-60px; background:var(--green); color:var(--white);
+  padding:.75rem 1.25rem; z-index:200; border-radius:0 0 var(--radius-sm) 0;
+  transition: top var(--fast) var(--ease);
+}
+.skip-link:focus{ top:0; }
+
+:focus-visible{ outline:3px solid var(--light); outline-offset:3px; border-radius:6px; }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+}
+
+/* =========================================================
+   TOP BAR — persistent brand strip + sound toggle
+   ========================================================= */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: clamp(.6rem,2vw,1rem) clamp(1rem,4vw,2rem);
+  background:linear-gradient(180deg, rgba(var(--dark-rgb),.85), rgba(var(--dark-rgb),0));
+  pointer-events:none;
+}
+.topbar > *{ pointer-events:auto; }
+.brand{ display:flex; align-items:center; gap:.6rem; }
+.brand img{ width:32px; height:32px; border-radius:8px; }
+.brand span{ font-family:var(--font-display); font-weight:700; font-size:1.05rem; letter-spacing:.02em; }
+
+.icon-btn{
+  width:44px; height:44px; border-radius:50%;
+  display:grid; place-items:center;
+  background:rgba(var(--light-rgb),.12);
+  border:1px solid rgba(var(--light-rgb),.35);
+  transition: background var(--fast), transform var(--fast);
+}
+.icon-btn:hover{ background:rgba(var(--light-rgb),.22); transform:translateY(-2px); }
+.icon-btn svg{ width:20px; height:20px; stroke:var(--light); }
+
+/* =========================================================
+   GAME HEADER — unlocks after onboarding
+   ========================================================= */
+.game-header{
+  position:fixed; top:0; left:0; right:0; z-index:90;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding: .75rem clamp(1rem,4vw,2rem);
+  padding-top: calc(.75rem + env(safe-area-inset-top));
+  background: rgba(var(--dark-rgb),.92);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid rgba(var(--light-rgb),.18);
+  transform: translateY(-110%);
+  transition: transform var(--mid) var(--ease);
+}
+.game-header.visible{ transform:translateY(0); }
+
+.gh-player{ display:flex; align-items:center; gap:.6rem; min-width:0; }
+.gh-avatar{
+  width:38px; height:38px; border-radius:50%; flex:none;
+  background:linear-gradient(135deg,var(--green),var(--light));
+  display:grid; place-items:center; font-family:var(--font-display); font-weight:700; color:var(--dark);
+}
+.gh-id{ display:flex; flex-direction:column; min-width:0; }
+.gh-name{ font-weight:700; font-size:.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.gh-level{ font-size:.7rem; color:var(--light); white-space:nowrap; }
+
+.gh-money{
+  font-family:var(--font-display); font-weight:800;
+  font-size:clamp(1rem,3vw,1.35rem);
+  color:var(--light);
+  display:flex; align-items:baseline; gap:.15rem;
+}
+.gh-money small{ font-size:.55em; font-weight:600; color:rgba(255,255,255,.6); margin-left:.35rem; }
+
+/* =========================================================
+   STAGE / SCENES
+   ========================================================= */
+.stage{
+  position:relative; min-height:100svh;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding: clamp(5.5rem,10vh,7rem) clamp(1.25rem,5vw,2rem) clamp(4rem,8vh,5rem);
+  background:
+    radial-gradient(60% 50% at 50% 0%, rgba(var(--green-rgb),.20), transparent 70%),
+    radial-gradient(50% 40% at 90% 100%, rgba(var(--light-rgb),.12), transparent 70%),
+    var(--dark);
+}
+
+.scene{ display:none; width:100%; max-width:640px; text-align:center; }
+.scene.active{ display:block; animation: sceneIn var(--mid) var(--ease); }
+@keyframes sceneIn{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:translateY(0); } }
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:.4rem;
+  font-size:.75rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--light); margin-bottom:1rem;
+}
+.eyebrow::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--light); }
+
+h1.hero-h1{
+  font-size:clamp(2rem,6vw,3.4rem); font-weight:800; letter-spacing:-.02em;
+  margin-bottom:1rem;
+}
+h1.hero-h1 .accent{
+  background:linear-gradient(90deg,var(--light),var(--green));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.lede{
+  font-size:clamp(1rem,2.4vw,1.2rem); color:rgba(255,255,255,.78);
+  max-width:46ch; margin:0 auto 2rem;
+}
+
+.dialogue-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(var(--light-rgb),.2);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem,4vw,2.5rem);
+  text-align:left;
+}
+.dialogue-bot{
+  display:flex; gap:.75rem; align-items:flex-start; margin-bottom:1.25rem;
+}
+.bot-avatar{
+  width:40px; height:40px; border-radius:12px; flex:none;
+  background:linear-gradient(135deg,var(--green),var(--light));
+  display:grid; place-items:center; font-size:1.2rem;
+}
+.bot-bubble{
+  background:rgba(var(--light-rgb),.1);
+  border:1px solid rgba(var(--light-rgb),.22);
+  border-radius: var(--radius-sm);
+  padding:.85rem 1.1rem;
+  font-size:1rem;
+}
+.bot-bubble strong{ color:var(--light); }
+
+.field{ margin-top:1.25rem; }
+.field label{ display:block; font-size:.8rem; color:rgba(255,255,255,.6); margin-bottom:.4rem; }
+.field input{
+  width:100%; padding:.9rem 1rem; font-size:1.05rem;
+  background:rgba(255,255,255,.06);
+  border:1.5px solid rgba(var(--light-rgb),.3);
+  border-radius: var(--radius-sm); color:var(--white);
+  transition: border-color var(--fast), background var(--fast);
+}
+.field input:focus{ border-color:var(--light); background:rgba(255,255,255,.09); }
+.field-error{ min-height:1.1rem; font-size:.8rem; color:#ffb4b4; margin-top:.4rem; }
+
+/* buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  font-family:var(--font-display); font-weight:700; font-size:1rem;
+  padding: 1rem 1.9rem; border-radius:999px;
+  min-height:44px;
+  background: linear-gradient(90deg,var(--green),var(--light));
+  color: var(--dark);
+  box-shadow: 0 10px 26px -10px rgba(var(--green-rgb),.6);
+  transition: transform var(--fast) var(--ease), box-shadow var(--fast);
+}
+.btn:hover{ transform: translateY(-3px); box-shadow: 0 16px 30px -10px rgba(var(--green-rgb),.7); }
+.btn:active{ transform: translateY(0); }
+.btn:disabled{ opacity:.5; cursor:not-allowed; transform:none; box-shadow:none; }
+.btn.secondary{
+  background:transparent; color:var(--light);
+  border:1.5px solid rgba(var(--light-rgb),.4); box-shadow:none;
+}
+.btn.secondary:hover{ background:rgba(var(--light-rgb),.1); }
+.btn.block{ width:100%; margin-top:1.5rem; }
+.btn.giant{ padding:1.25rem 2.5rem; font-size:1.15rem; }
+
+.btn-row{ display:flex; flex-wrap:wrap; gap:.85rem; justify-content:center; margin-top:1.5rem; }
+
+/* choice cards */
+.choice-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.75rem;
+}
+@media (max-width:520px){ .choice-grid{ grid-template-columns:1fr; } }
+.choice-card{
+  background:rgba(255,255,255,.04);
+  border:1.5px solid rgba(var(--light-rgb),.22);
+  border-radius: var(--radius);
+  padding:1.5rem 1.1rem;
+  text-align:center;
+  transition: transform var(--fast) var(--ease), border-color var(--fast), background var(--fast);
+}
+.choice-card:hover, .choice-card:focus-visible{
+  transform: translateY(-6px);
+  border-color: var(--light);
+  background: rgba(var(--light-rgb),.08);
+}
+.choice-emoji{ font-size:2.1rem; display:block; margin-bottom:.6rem; }
+.choice-title{ font-family:var(--font-display); font-weight:700; margin-bottom:.3rem; }
+.choice-sub{ font-size:.82rem; color:rgba(255,255,255,.6); }
+
+/* toffee / project stage */
+.project-panel{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(var(--light-rgb),.2);
+  border-radius: var(--radius);
+  padding: clamp(1.75rem,4vw,2.75rem);
+}
+.money-display{
+  font-family:var(--font-display); font-weight:800;
+  font-size:clamp(2.4rem,9vw,3.6rem); color:var(--light);
+  margin:.25rem 0 .5rem;
+}
+.money-display sup{ font-size:.4em; top:-.6em; color:rgba(255,255,255,.5); }
+.progress-dots{ display:flex; gap:.5rem; justify-content:center; margin:1rem 0 1.75rem; }
+.dot{
+  width:10px; height:10px; border-radius:50%;
+  background:rgba(255,255,255,.15); transition: background var(--fast), transform var(--fast);
+}
+.dot.done{ background:var(--light); transform:scale(1.15); }
+.dot.current{ background:var(--green); box-shadow:0 0 0 4px rgba(var(--green-rgb),.25); }
+.flavor-line{ min-height:1.6rem; font-size:.95rem; color:var(--light); font-weight:600; margin-top:.75rem; }
+
+/* toast / achievement popup */
+.toast-stack{
+  position:fixed; top:calc(1rem + env(safe-area-inset-top)); right:1rem; z-index:300;
+  display:flex; flex-direction:column; gap:.6rem; pointer-events:none; max-width:min(90vw,320px);
+}
+.toast{
+  background:linear-gradient(135deg,var(--green),var(--light));
+  color:var(--dark); border-radius: var(--radius-sm);
+  padding:.85rem 1.1rem; font-size:.85rem; font-weight:700;
+  box-shadow:0 14px 30px -10px rgba(0,0,0,.5);
+  display:flex; align-items:center; gap:.6rem;
+  animation: toastIn .4s var(--ease), toastOut .4s var(--ease) 2.6s forwards;
+}
+@keyframes toastIn{ from{ opacity:0; transform:translateX(30px);} to{opacity:1; transform:translateX(0);} }
+@keyframes toastOut{ to{ opacity:0; transform:translateX(30px) scale(.9);} }
+
+/* recap stats */
+.stat-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:.85rem; margin:1.75rem 0;
+  text-align:left;
+}
+@media (max-width:480px){ .stat-grid{ grid-template-columns:1fr; } }
+.stat-card{
+  background:rgba(255,255,255,.04); border:1px solid rgba(var(--light-rgb),.2);
+  border-radius: var(--radius-sm); padding:1rem 1.1rem;
+}
+.stat-card .k{ font-family:var(--font-display); font-weight:800; font-size:1.3rem; color:var(--light); }
+.stat-card .l{ font-size:.78rem; color:rgba(255,255,255,.6); }
+
+/* journey / progress rail with paper plane */
+.journey-rail{
+  position:fixed; left:0; right:0; bottom:0; z-index:80;
+  padding: .6rem clamp(1rem,4vw,2rem);
+  padding-bottom: calc(.6rem + env(safe-area-inset-bottom));
+  background: linear-gradient(0deg, rgba(var(--dark-rgb),.9), rgba(var(--dark-rgb),0));
+}
+.journey-track{
+  position:relative; height:4px; border-radius:99px;
+  background:rgba(255,255,255,.12); max-width:640px; margin:0 auto;
+}
+.journey-fill{
+  position:absolute; inset:0 auto 0 0; width:0%;
+  background:linear-gradient(90deg,var(--green),var(--light));
+  border-radius:99px; transition: width var(--mid) var(--ease);
+}
+.journey-plane{
+  position:absolute; top:50%; left:0%; width:26px; height:26px;
+  transform:translate(-50%,-50%); transition: left var(--mid) var(--ease);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,.4));
+}
+.journey-plane img{ width:100%; height:100%; object-fit:contain; border-radius:6px; }
+
+/* confetti */
+.confetti-piece{
+  position:fixed; top:-10px; width:8px; height:14px; z-index:250; pointer-events:none;
+  animation: confettiFall linear forwards;
+}
+@keyframes confettiFall{
+  to{ transform: translateY(105svh) rotate(540deg); opacity:.2; }
+}
+
+/* SEO section (real, visible content) */
+.seo-section{
+  background: var(--dark);
+  border-top:1px solid rgba(var(--light-rgb),.15);
+  padding: clamp(3rem,8vw,5rem) clamp(1.25rem,6vw,4rem);
+}
+.seo-inner{ max-width:920px; margin:0 auto; }
+.seo-inner h2.section-title{
+  font-size:clamp(1.5rem,4vw,2.1rem); margin-bottom:1rem;
+}
+.seo-inner > p.intro{ color:rgba(255,255,255,.72); max-width:70ch; margin-bottom:2.5rem; }
+.seo-grid{ display:grid; gap:1.75rem; grid-template-columns:repeat(2,1fr); }
+@media (max-width:640px){ .seo-grid{ grid-template-columns:1fr; } }
+.seo-card h3{ font-size:1.05rem; color:var(--light); margin-bottom:.4rem; }
+.seo-card p{ font-size:.92rem; color:rgba(255,255,255,.68); }
+
+/* footer */
+.site-footer{
+  background:var(--dark); border-top:1px solid rgba(var(--light-rgb),.12);
+  padding: 2.5rem clamp(1.25rem,6vw,4rem) calc(2.5rem + env(safe-area-inset-bottom));
+  display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center; justify-content:space-between;
+}
+.footer-brand{ display:flex; align-items:center; gap:.6rem; }
+.footer-brand img{ width:28px; height:28px; border-radius:7px; }
+.footer-brand span{ font-family:var(--font-display); font-weight:700; }
+.social-row{ display:flex; flex-wrap:wrap; gap:.6rem; max-width:340px; }
+.social-row a{
+  width:38px; height:38px; border-radius:50%; display:grid; place-items:center;
+  background:rgba(255,255,255,.05); border:1px solid rgba(var(--light-rgb),.2);
+  transition: background var(--fast), transform var(--fast), border-color var(--fast);
+}
+.social-row a:hover{ background:rgba(var(--light-rgb),.15); border-color:var(--light); transform:translateY(-2px); }
+.social-row svg{ width:17px; height:17px; }
+.copyright{ width:100%; font-size:.75rem; color:rgba(255,255,255,.4); text-align:center; }
+
+/* download pulse */
+.pulse{ animation: pulse 2.2s ease-in-out infinite; }
+@keyframes pulse{
+  0%,100%{ box-shadow:0 10px 26px -10px rgba(var(--green-rgb),.6); }
+  50%{ box-shadow:0 10px 34px -6px rgba(var(--light-rgb),.85); }
+}
+
+.badge-pop{ animation: badgePop .5s var(--ease); }
+@keyframes badgePop{
+  0%{ transform:scale(.6); opacity:0; }
+  60%{ transform:scale(1.08); opacity:1; }
+  100%{ transform:scale(1); }
+}
+</style>
 </head>
 <body>
 
-    <main id="game-container">
-        
-        <!-- Scene 1: The Beginning -->
-        <section id="scene-1" class="scene active" aria-label="Introduction">
-            <div class="content-wrapper">
-                <h1 class="sr-only">Earn Money Online for Students with Funngro</h1>
-                <p class="hero-text" aria-hidden="true">
-                    <span class="word">Every</span> <span class="word">entrepreneur...</span><br>
-                    <span class="word">Every</span> <span class="word">freelancer...</span><br>
-                    <span class="word">Every</span> <span class="word">founder...</span><br>
-                    <span class="word">earned</span> <span class="word">their</span> <span class="word">first</span> <span class="word">rupee</span> <span class="word">someday.</span>
-                </p>
-                <h2 class="hero-subtext">Today... is yours.</h2>
-                <button id="btn-begin" class="primary-btn pulse-hover">Begin Your Journey</button>
-            </div>
-        </section>
+<a class="skip-link" href="#stage">Skip to content</a>
 
-        <!-- Scene 2: Identity -->
-        <section id="scene-2" class="scene hidden" aria-label="Enter your identity">
-            <div class="content-wrapper">
-                <div class="robot-dialogue">
-                    <p>Hey future entrepreneur 👋</p>
-                    <p>What's your name?</p>
-                </div>
-                <input type="text" id="player-name" placeholder="Type your name..." autocomplete="off">
-                <button id="btn-name-submit" class="primary-btn">Continue</button>
-            </div>
-        </section>
+<!-- persistent brand strip -->
+<div class="topbar">
+  <div class="brand">
+    <img src="funngro-icon.png" alt="" width="32" height="32">
+    <span>Funngro</span>
+  </div>
+  <button class="icon-btn" id="muteBtn" type="button" aria-pressed="false" aria-label="Mute sound">
+    <svg id="soundOnIcon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M18.5 5.5a9 9 0 0 1 0 13"></path></svg>
+    <svg id="soundOffIcon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+  </button>
+</div>
 
-        <!-- Scene 3: Reality Check -->
-        <section id="scene-3" class="scene hidden" aria-label="Reality Check">
-            <div class="content-wrapper">
-                <div class="robot-dialogue">
-                    <p>One honest question, <span id="display-name-reality"></span>...</p>
-                    <p>How much do you earn every month right now?</p>
-                </div>
-                <div class="card-grid">
-                    <button class="choice-card" id="btn-earn-nothing">
-                        <span class="emoji">😕</span>
-                        <span>Nothing yet</span>
-                    </button>
-                    <button class="choice-card" id="btn-earn-enough">
-                        <span class="emoji">😎</span>
-                        <span>Enough to pay for myself</span>
-                    </button>
-                </div>
-            </div>
-        </section>
+<!-- gamified dashboard header, unlocked mid-story -->
+<header class="game-header" id="gameHeader" aria-hidden="true">
+  <div class="gh-player">
+    <div class="gh-avatar" id="ghAvatarInitial" aria-hidden="true">F</div>
+    <div class="gh-id">
+      <span class="gh-name" id="ghName">Player</span>
+      <span class="gh-level" id="ghLevel">Level 1 · Intern</span>
+    </div>
+  </div>
+  <div class="gh-money" aria-live="polite">
+    ₹<span id="ghMoney">0</span><small id="ghAge"></small>
+  </div>
+</header>
 
-        <!-- Scene 4 & 5: Dashboard & Projects -->
-        <section id="scene-4" class="scene hidden" aria-label="Your Dashboard">
-            <header class="dashboard-header">
-                <div class="avatar-info">
-                    <span id="display-name" class="font-bold">Player</span> | <span id="display-level">Level 1 Intern</span>
-                </div>
-                <div class="money-container" aria-live="polite">
-                    <span>₹</span><span id="money-counter">0</span>
-                </div>
-            </header>
-            
-            <div class="project-board">
-                <div id="achievement-toast" class="toast hidden"></div>
-                <h2>Available Projects</h2>
-                <button id="btn-complete-project" class="action-btn">
-                    📨 Complete Toffee Project
-                </button>
-                <button id="btn-next-phase" class="primary-btn hidden mt-2">
-                    Upgrade Your Skills
-                </button>
-            </div>
-        </section>
+<main class="stage" id="stage">
 
-        <!-- Scene 9: Finale & Footer -->
-        <section id="scene-finale" class="scene hidden" aria-label="Congratulations">
-            <div class="content-wrapper finale-wrapper">
-                <h2>Congratulations!</h2>
-                <p>You've experienced the first steps of your career.</p>
-                
-                <a href="https://play.google.com/store/apps/details?id=com.funngro" target="_blank" rel="noopener noreferrer" class="download-btn pulse-anim">
-                    START EARNING TODAY
-                </a>
-            </div>
+  <!-- SCENE 1 — LANDING (fully static, crawlable, real H1) -->
+  <section class="scene active" id="scene-landing" data-scene="landing">
+    <p class="eyebrow">A 5-minute story · Funngro</p>
+    <h1 class="hero-h1">Earn Your First <span class="accent">Income</span> Before You Turn 18</h1>
+    <p class="lede">Complete real projects. Learn real skills. Build your portfolio. This is what your first six months on Funngro could feel like — play it out for yourself.</p>
+    <div class="btn-row">
+      <button class="btn giant" type="button" data-action="start">▶ Start Your Journey</button>
+      <a class="btn secondary" href="#seo-section" data-action="scroll-stories">See What Students Earn</a>
+    </div>
+  </section>
 
-            <!-- SEO Optimized Footer -->
-            <footer class="game-footer">
-                <section aria-labelledby="social-heading">
-                    <h2 id="social-heading" class="sr-only">Follow Funngro</h2>
-                    <nav aria-label="Funngro Social Media" class="social-nav">
-                        <ul class="social-list">
-                            <li><a href="https://www.instagram.com/fun.n.gro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a></li>
-                            <li><a href="https://www.linkedin.com/company/funngro/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a></li>
-                            <li><a href="https://www.youtube.com/@funngro_India" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a></li>
-                            <li><a href="https://x.com/funngroofficial" target="_blank" rel="noopener noreferrer" aria-label="X">X</a></li>
-                            <li><a href="https://www.facebook.com/funngro" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </footer>
-        </section>
+  <!-- SCENE 2 — NAME -->
+  <section class="scene" id="scene-name" data-scene="name">
+    <div class="dialogue-card">
+      <div class="dialogue-bot">
+        <div class="bot-avatar" aria-hidden="true">👋</div>
+        <div class="bot-bubble">Hey future entrepreneur. Before we begin — what should I call you?</div>
+      </div>
+      <form id="nameForm" novalidate>
+        <div class="field">
+          <label for="nameInput">Your first name</label>
+          <input id="nameInput" name="name" type="text" autocomplete="given-name" placeholder="e.g. Satvik" maxlength="24" required>
+          <div class="field-error" id="nameError" role="alert"></div>
+        </div>
+        <button class="btn block" type="submit">Continue</button>
+      </form>
+    </div>
+  </section>
 
-    </main>
+  <!-- SCENE 3 — AGE -->
+  <section class="scene" id="scene-age" data-scene="age">
+    <div class="dialogue-card">
+      <div class="dialogue-bot">
+        <div class="bot-avatar" aria-hidden="true">🎯</div>
+        <div class="bot-bubble">Nice to meet you, <strong id="ageGreetName">there</strong>. And how old are you?</div>
+      </div>
+      <form id="ageForm" novalidate>
+        <div class="field">
+          <label for="ageInput">Your age</label>
+          <input id="ageInput" name="age" type="number" inputmode="numeric" min="13" max="25" placeholder="e.g. 16" required>
+          <div class="field-error" id="ageError" role="alert"></div>
+        </div>
+        <button class="btn block" type="submit">Continue</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SCENE 4 — REALITY CHECK -->
+  <section class="scene" id="scene-reality" data-scene="reality">
+    <div class="dialogue-card" style="text-align:center;">
+      <div class="dialogue-bot" style="text-align:left;">
+        <div class="bot-avatar" aria-hidden="true">💬</div>
+        <div class="bot-bubble">One honest question, <strong id="realityName">friend</strong> — how much do you earn every month right now?</div>
+      </div>
+      <div class="choice-grid">
+        <button class="choice-card" type="button" data-choice="nothing">
+          <span class="choice-emoji" aria-hidden="true">😕</span>
+          <span class="choice-title">I earn nothing yet</span>
+          <span class="choice-sub">Still figuring it out</span>
+        </button>
+        <button class="choice-card" type="button" data-choice="enough">
+          <span class="choice-emoji" aria-hidden="true">😎</span>
+          <span class="choice-title">Enough to cover myself</span>
+          <span class="choice-sub">Already earning a bit</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 5 — CONFIRM -->
+  <section class="scene" id="scene-confirm" data-scene="confirm">
+    <div class="dialogue-card">
+      <div class="dialogue-bot">
+        <div class="bot-avatar" aria-hidden="true">🙂</div>
+        <div class="bot-bubble" id="confirmBubble">That's completely okay. Every successful person started exactly there.</div>
+      </div>
+      <p class="lede" style="text-align:left; margin:1rem 0 0;">Ready to see what the next six months could look like on Funngro?</p>
+      <button class="btn block" type="button" data-action="unlock-dashboard">Yes, continue with Funngro →</button>
+    </div>
+  </section>
+
+  <!-- SCENE 6 — TOFFEE PROJECTS -->
+  <section class="scene" id="scene-toffee" data-scene="toffee">
+    <p class="eyebrow">Week 1</p>
+    <h2 style="font-size:clamp(1.4rem,4vw,1.9rem); margin-bottom:1rem;">Complete Your Toffee Projects</h2>
+    <div class="project-panel">
+      <div class="money-display" aria-live="polite"><sup>Total earned</sup><br>₹<span id="toffeeTotal">0</span></div>
+      <div class="progress-dots" id="progressDots" aria-hidden="true">
+        <span class="dot current" data-dot="1"></span>
+        <span class="dot" data-dot="2"></span>
+        <span class="dot" data-dot="3"></span>
+        <span class="dot" data-dot="4"></span>
+        <span class="dot" data-dot="5"></span>
+      </div>
+      <button class="btn giant" type="button" id="toffeeBtn">📨 Complete Toffee Project</button>
+      <p class="flavor-line" id="toffeeFlavor" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- SCENE 7 — BIG PROJECT -->
+  <section class="scene" id="scene-bigproject" data-scene="bigproject">
+    <p class="eyebrow">High Score Unlocked</p>
+    <h2 style="font-size:clamp(1.4rem,4vw,1.9rem); margin-bottom:.75rem;">You're Ready for a Big Project</h2>
+    <p class="lede">Toffee projects built your reputation. A client just messaged asking you to build their website.</p>
+    <div class="project-panel">
+      <div class="money-display" aria-live="polite">₹<span id="bigTotal">3,650</span></div>
+      <button class="btn giant" type="button" id="bigProjectBtn">🚀 Complete Big Project — Build Website</button>
+      <p class="flavor-line" id="bigFlavor" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- SCENE 8 — SKILL CHOICE -->
+  <section class="scene" id="scene-skill" data-scene="skill">
+    <p class="eyebrow">Level Up</p>
+    <h2 style="font-size:clamp(1.4rem,4vw,1.9rem); margin-bottom:.5rem;">You crossed ₹10,000. That's more than many students imagine earning.</h2>
+    <p class="lede">Pick a skill to go deeper this month.</p>
+    <div class="choice-grid">
+      <button class="choice-card" type="button" data-skill="Web Development">
+        <span class="choice-emoji" aria-hidden="true">🌐</span>
+        <span class="choice-title">Web Development</span>
+        <span class="choice-sub">Build sites clients pay for</span>
+      </button>
+      <button class="choice-card" type="button" data-skill="Digital Marketing">
+        <span class="choice-emoji" aria-hidden="true">📈</span>
+        <span class="choice-title">Digital Marketing</span>
+        <span class="choice-sub">Grow brands, earn on results</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- SCENE 9 — SCALE TO 60K -->
+  <section class="scene" id="scene-scale" data-scene="scale">
+    <p class="eyebrow" id="scaleEyebrow">Weeks Pass</p>
+    <h2 style="font-size:clamp(1.4rem,4vw,1.9rem); margin-bottom:.75rem;" id="scaleHeadline">Your new skill is paying off.</h2>
+    <div class="project-panel">
+      <div class="money-display" aria-live="polite">₹<span id="scaleTotal">10,000</span></div>
+      <p class="flavor-line" id="scaleFlavor"></p>
+      <button class="btn block" type="button" id="scaleContinueBtn" style="display:none;">Continue →</button>
+    </div>
+  </section>
+
+  <!-- SCENE 10 — BUSINESS / LEADER UNLOCK -->
+  <section class="scene" id="scene-business" data-scene="business">
+    <p class="eyebrow">Milestone</p>
+    <h2 style="font-size:clamp(1.4rem,4vw,1.9rem); margin-bottom:.75rem;">You Have Enough to Start Your Own Business</h2>
+    <div class="dialogue-card">
+      <div class="dialogue-bot">
+        <div class="bot-avatar" aria-hidden="true">👑</div>
+        <div class="bot-bubble">You're upgraded from <strong>Clan Member</strong> to <strong>Clan Leader</strong>. From here, you mentor young creators — and earn a share of what they complete as <strong>Guru Dakshina</strong>.</div>
+      </div>
+      <button class="btn block" type="button" data-action="go-finale">Go Boost My Business →</button>
+    </div>
+  </section>
+
+  <!-- SCENE 11 — FINALE + DOWNLOAD -->
+  <section class="scene" id="scene-finale" data-scene="finale">
+    <p class="eyebrow">From Intern to Leader — In a Few Serious Months</p>
+    <h2 style="font-size:clamp(1.6rem,5vw,2.3rem); margin-bottom:.5rem;">
+      Congratulations, <span id="finaleName">Player</span>.
+    </h2>
+    <p class="lede" style="margin-bottom:0;">At just <strong id="finaleAge">—</strong> years old, you own a business and lead your own team on Funngro.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="k">₹60,000</div><div class="l">Earned this journey</div></div>
+      <div class="stat-card"><div class="k" id="finaleSkill">Web Development</div><div class="l">Skill unlocked</div></div>
+      <div class="stat-card"><div class="k">7</div><div class="l">Client projects completed</div></div>
+      <div class="stat-card"><div class="k">Clan Leader</div><div class="l">Current status</div></div>
+    </div>
+
+    <p class="lede">This is what your first six months on Funngro could look like. The easiest next step is downloading the app.</p>
+
+    <a class="btn giant pulse" href="https://play.google.com/store/apps/details?id=com.wishbanc.funngro&hl=en_IN" target="_blank" rel="noopener noreferrer" id="downloadBtn">
+      ⬇ Start Earning Today — Get Funngro Free
+    </a>
+  </section>
+
+</main>
+
+<!-- journey progress rail with paper-plane marker -->
+<div class="journey-rail" aria-hidden="true">
+  <div class="journey-track">
+    <div class="journey-fill" id="journeyFill"></div>
+    <div class="journey-plane" id="journeyPlane"><img src="assets/funngro-mark.jpeg" alt=""></div>
+  </div>
+</div>
+
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<!-- Real, visible, crawlable SEO content -->
+<section class="seo-section" id="seo-section">
+  <div class="seo-inner">
+    <h2 class="section-title">Earn Money Online for Students in India</h2>
+    <p class="intro">Funngro is a skill-based earning platform built for students and teenagers who want to start freelancing before college. Instead of watching tutorials with no outcome, you complete real, paid client projects and build a portfolio you can actually show.</p>
+    <div class="seo-grid">
+      <div class="seo-card">
+        <h3>Complete Real Client Projects</h3>
+        <p>Every project on Funngro comes from a real client. Paid internships for teenagers and online projects for students are matched to your current skill level, so your first task is always achievable.</p>
+      </div>
+      <div class="seo-card">
+        <h3>Learn Professional Skills</h3>
+        <p>Learn while earning: web development, design, marketing, video editing and content writing are taught through practice, not just theory — Funngro is built as a teen freelancing platform first.</p>
+      </div>
+      <div class="seo-card">
+        <h3>Build Your Portfolio</h3>
+        <p>Every completed project adds to a portfolio you can show future clients, colleges or employers — real proof of skill-based earning, not just a certificate.</p>
+      </div>
+      <div class="seo-card">
+        <h3>Grow Into a Business Leader</h3>
+        <p>Top performers move from freelancer to Clan Leader, mentoring newer students and earning a share of their work — an early, practical lesson in student entrepreneurship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-brand">
+    <img src="assets/funngro-icon.png" alt="Funngro">
+    <span>Funngro</span>
+  </div>
+  <nav class="social-row" aria-label="Funngro on social media">
+    <a href="https://www.instagram.com/fun.n.gro" target="_blank" rel="noopener noreferrer" aria-label="Funngro on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="var(--light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+    <a href="https://www.linkedin.com/company/funngro/" target="_blank" rel="noopener noreferrer" aria-label="Funngro on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="var(--light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+    <a href="https://www.youtube.com/@funngro_India" target="_blank" rel="noopener noreferrer" aria-label="Funngro on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="var(--light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a>
+    <a href="https://www.facebook.com/funngro/" target="_blank" rel="noopener noreferrer" aria-label="Funngro on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="var(--light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+    <a href="https://x.com/funngroofficial" target="_blank" rel="noopener noreferrer" aria-label="Funngro on X"><svg viewBox="0 0 24 24" fill="none" stroke="var(--light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+    <a href="https://whatsapp.com/channel/0029VaC43g0DTkK1Q83jMy2N" target="_blank" rel="noopener noreferrer" aria-label="Funngro on WhatsApp"><svg viewBox="0 0 24 24" fill="var(--light)" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.06 18.31L3 22l3.78-1A10 10 0 1 0 19.05 4.91Zm-7.04 15.42a8.34 8.34 0 0 1-4.25-1.17l-.3-.18-2.24.59.6-2.18-.2-.31a8.36 8.36 0 1 1 6.39 3.25Z"></path></svg></a>
+    <a href="https://www.reddit.com/r/Funngro/" target="_blank" rel="noopener noreferrer" aria-label="Funngro on Reddit"><svg viewBox="0 0 24 24" fill="var(--light)" aria-hidden="true"><path d="M22 12.07a2.06 2.06 0 0 0-3.49-1.46c-1.46-.95-3.4-1.56-5.55-1.62l1.06-3.36 2.93.67a1.5 1.5 0 1 0 .17-1.42l-3.27-.74a.5.5 0 0 0-.59.34l-1.21 3.84c-2.18.04-4.15.66-5.62 1.62a2.07 2.07 0 1 0-2.31 3.34 4 4 0 0 0-.04.59c0 3.05 3.57 5.52 7.97 5.52s7.97-2.47 7.97-5.52c0-.2 0-.39-.04-.59A2.07 2.07 0 0 0 22 12.07Z"></path></svg></a>
+  </nav>
+  <p class="copyright">© <span id="year"></span> Funngro. All rights reserved.</p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------------------------------------------------
+     STATE (in-memory only — this is a single 5-minute session,
+     nothing is written to localStorage/sessionStorage)
+     --------------------------------------------------------- */
+  var state = { name:"", age:null, muted:false, toffeeClicks:0, money:0, skill:"" };
+  var TOFFEE_STEPS = [50,100,500,1000,2000];
+  var TOFFEE_LINES = [
+    "You earned your first income. 🎉",
+    "A client trusted you again.",
+    "Reviews are improving.",
+    "You're getting noticed.",
+    "Huge! You just unlocked High Score."
+  ];
+  var SCENE_ORDER = ["landing","name","age","reality","confirm","toffee","bigproject","skill","scale","business","finale"];
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------------------------------------------------------
+     SOUND — synthesised with WebAudio, no external files
+     --------------------------------------------------------- */
+  var AudioCtx = window.AudioContext || window.webkitAudioContext;
+  var actx = null;
+  function ctx(){ if(!actx && AudioCtx){ actx = new AudioCtx(); } return actx; }
+
+  function tone(freq, dur, type, gainVal, delay){
+    if(state.muted) return;
+    var c = ctx(); if(!c) return;
+    if(c.state === "suspended") c.resume();
+    var t0 = c.currentTime + (delay||0);
+    var osc = c.createOscillator();
+    var gain = c.createGain();
+    osc.type = type || "sine";
+    osc.frequency.setValueAtTime(freq, t0);
+    gain.gain.setValueAtTime(0, t0);
+    gain.gain.linearRampToValueAtTime(gainVal||.18, t0+.02);
+    gain.gain.exponentialRampToValueAtTime(.0001, t0+dur);
+    osc.connect(gain).connect(c.destination);
+    osc.start(t0); osc.stop(t0+dur+.02);
+  }
+  var sound = {
+    click:function(){ tone(520,.08,"sine",.12); },
+    coin:function(){ tone(880,.12,"triangle",.16); tone(1320,.14,"triangle",.12,.06); },
+    cash:function(){ tone(660,.12,"sawtooth",.1); tone(880,.12,"sawtooth",.1,.05); tone(1100,.16,"sawtooth",.1,.1); },
+    achievement:function(){ tone(660,.1,"square",.1); tone(880,.1,"square",.1,.09); tone(1100,.18,"square",.12,.18); },
+    levelup:function(){ tone(440,.18,"sine",.14); tone(660,.24,"sine",.16,.12); },
+    type:function(){ tone(300,.04,"square",.05); }
+  };
+
+  var muteBtn = document.getElementById("muteBtn");
+  var onIcon = document.getElementById("soundOnIcon");
+  var offIcon = document.getElementById("soundOffIcon");
+  muteBtn.addEventListener("click", function(){
+    state.muted = !state.muted;
+    muteBtn.setAttribute("aria-pressed", String(state.muted));
+    muteBtn.setAttribute("aria-label", state.muted ? "Unmute sound" : "Mute sound");
+    onIcon.style.display = state.muted ? "none" : "block";
+    offIcon.style.display = state.muted ? "block" : "none";
+  });
+
+  /* ---------------------------------------------------------
+     SCENE NAVIGATION
+     --------------------------------------------------------- */
+  var scenes = {};
+  SCENE_ORDER.forEach(function(id){ scenes[id] = document.getElementById("scene-"+id); });
+
+  var journeyFill = document.getElementById("journeyFill");
+  var journeyPlane = document.getElementById("journeyPlane");
+
+  function goTo(id){
+    Object.keys(scenes).forEach(function(k){ scenes[k].classList.remove("active"); });
+    scenes[id].classList.add("active");
+    scenes[id].setAttribute("tabindex","-1");
+    scenes[id].focus({preventScroll:true});
+    var idx = SCENE_ORDER.indexOf(id);
+    var pct = (idx/(SCENE_ORDER.length-1))*100;
+    journeyFill.style.width = pct+"%";
+    journeyPlane.style.left = pct+"%";
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+
+  /* ---------------------------------------------------------
+     TOASTS / ACHIEVEMENTS
+     --------------------------------------------------------- */
+  function toast(text, emoji){
+    var stack = document.getElementById("toastStack");
+    var el = document.createElement("div");
+    el.className = "toast";
+    el.innerHTML = "<span aria-hidden='true'>"+(emoji||"🏆")+"</span><span>"+text+"</span>";
+    stack.appendChild(el);
+    sound.achievement();
+    setTimeout(function(){ el.remove(); }, 3200);
+  }
+
+  /* ---------------------------------------------------------
+     CONFETTI (brand colours only)
+     --------------------------------------------------------- */
+  function confetti(count){
+    var colors = ["#07AB5F","#5FDD96","#FFFFFF"];
+    for(var i=0;i<(count||60);i++){
+      (function(){
+        var piece = document.createElement("div");
+        piece.className = "confetti-piece";
+        piece.style.left = (Math.random()*100)+"vw";
+        piece.style.background = colors[Math.floor(Math.random()*colors.length)];
+        piece.style.borderRadius = Math.random()>.5 ? "50%" : "2px";
+        var dur = 2.4 + Math.random()*1.6;
+        piece.style.animationDuration = dur+"s";
+        piece.style.opacity = String(.7+Math.random()*.3);
+        document.body.appendChild(piece);
+        setTimeout(function(){ piece.remove(); }, dur*1000+200);
+      })();
+    }
+  }
+
+  /* ---------------------------------------------------------
+     MONEY COUNTER (rolling animation, en-IN formatting)
+     --------------------------------------------------------- */
+  function animateCount(el, from, to, duration, onDone){
+    var startTime = null;
+    function frame(ts){
+      if(startTime===null) startTime = ts;
+      var p = Math.min(1, (ts-startTime)/duration);
+      var eased = 1 - Math.pow(1-p, 3);
+      var val = Math.round(from + (to-from)*eased);
+      el.textContent = val.toLocaleString("en-IN");
+      if(p<1){ requestAnimationFrame(frame); }
+      else { el.textContent = to.toLocaleString("en-IN"); if(onDone) onDone(); }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  var ghMoney = document.getElementById("ghMoney");
+  function setHeaderMoney(to, duration){
+    animateCount(ghMoney, state.money, to, duration||600);
+  }
+
+  /* ---------------------------------------------------------
+     SCENE 1 → 2 : start
+     --------------------------------------------------------- */
+  document.querySelector('[data-action="start"]').addEventListener("click", function(){
+    sound.click();
+    goTo("name");
+  });
+
+  /* SCENE 2: name */
+  document.getElementById("nameForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var val = document.getElementById("nameInput").value.trim();
+    var err = document.getElementById("nameError");
+    if(!val){ err.textContent = "Please enter your name to continue."; return; }
+    err.textContent = "";
+    state.name = val.charAt(0).toUpperCase()+val.slice(1);
+    sound.type();
+    document.getElementById("ageGreetName").textContent = state.name;
+    document.getElementById("realityName").textContent = state.name;
+    goTo("age");
+  });
+
+  /* SCENE 3: age */
+  document.getElementById("ageForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var input = document.getElementById("ageInput");
+    var val = parseInt(input.value,10);
+    var err = document.getElementById("ageError");
+    if(!val || val<10 || val>100){ err.textContent = "Please enter a valid age."; return; }
+    err.textContent = "";
+    state.age = val;
+    sound.click();
+    goTo("reality");
+  });
+
+  /* SCENE 4: reality check */
+  document.querySelectorAll("[data-choice]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      sound.click();
+      var choice = btn.getAttribute("data-choice");
+      var bubble = document.getElementById("confirmBubble");
+      if(choice==="nothing"){
+        bubble.innerHTML = "That's completely okay. Every successful person started exactly there.";
+      } else {
+        bubble.innerHTML = "That's great — you already know what it takes to earn. Let's see how much further Funngro can take you.";
+      }
+      goTo("confirm");
+    });
+  });
+
+  /* SCENE 5: confirm → unlock dashboard */
+  document.querySelector('[data-action="unlock-dashboard"]').addEventListener("click", function(){
+    sound.levelup();
+    var header = document.getElementById("gameHeader");
+    document.getElementById("ghName").textContent = state.name+" · "+state.age;
+    document.getElementById("ghAvatarInitial").textContent = state.name.charAt(0).toUpperCase();
+    document.getElementById("finaleName").textContent = state.name;
+    document.getElementById("finaleAge").textContent = state.age;
+    header.classList.add("visible");
+    header.setAttribute("aria-hidden","false");
+    goTo("toffee");
+    toast("Dashboard unlocked", "📊");
+  });
+
+  /* ---------------------------------------------------------
+     SCENE 6: toffee projects (5 sequential clicks)
+     --------------------------------------------------------- */
+  var toffeeBtn = document.getElementById("toffeeBtn");
+  var toffeeTotalEl = document.getElementById("toffeeTotal");
+  var toffeeFlavor = document.getElementById("toffeeFlavor");
+
+  toffeeBtn.addEventListener("click", function(){
+    if(state.toffeeClicks >= 5) return;
+    var amount = TOFFEE_STEPS[state.toffeeClicks];
+    var before = state.money;
+    state.money += amount;
+    state.toffeeClicks++;
+
+    sound.coin();
+    animateCount(toffeeTotalEl, before, state.money, 500);
+    setHeaderMoney(state.money, 500);
+    toffeeFlavor.textContent = "+₹"+amount.toLocaleString("en-IN")+"  ·  "+TOFFEE_LINES[state.toffeeClicks-1];
+
+    var dot = document.querySelector('[data-dot="'+state.toffeeClicks+'"]');
+    if(dot){ dot.classList.remove("current"); dot.classList.add("done"); }
+    var nextDot = document.querySelector('[data-dot="'+(state.toffeeClicks+1)+'"]');
+    if(nextDot){ nextDot.classList.add("current"); }
+
+    if(state.toffeeClicks === 1){ toast("Achievement: First Income", "💰"); }
+
+    if(state.toffeeClicks >= 5){
+      toffeeBtn.disabled = true;
+      toffeeBtn.textContent = "All Toffee Projects Complete ✅";
+      document.getElementById("ghLevel").textContent = "Level 2 · Rising Talent";
+      toast("Achievement: High Performer", "⭐");
+      setTimeout(function(){
+        document.getElementById("bigTotal").textContent = state.money.toLocaleString("en-IN");
+        goTo("bigproject");
+      }, 1100);
+    }
+  });
+
+  /* ---------------------------------------------------------
+     SCENE 7: big project → 10,000
+     --------------------------------------------------------- */
+  document.getElementById("bigProjectBtn").addEventListener("click", function(){
+    var btn = this;
+    btn.disabled = true;
+    sound.cash();
+    var before = state.money;
+    var target = 10000;
+    var reward = target - before;
+    var bigTotalEl = document.getElementById("bigTotal");
+    animateCount(bigTotalEl, before, target, 1400, function(){
+      confetti(80);
+      sound.levelup();
+    });
+    setHeaderMoney(target, 1400);
+    document.getElementById("bigFlavor").textContent = "+₹"+reward.toLocaleString("en-IN")+" · You crossed ₹10,000.";
+    state.money = target;
+    document.getElementById("ghLevel").textContent = "Level 3 · Freelancer";
+    toast("Achievement: ₹10,000 Club", "🏅");
+    setTimeout(function(){ goTo("skill"); }, 1900);
+  });
+
+  /* ---------------------------------------------------------
+     SCENE 8: skill choice → SCENE 9: scale to 60,000
+     --------------------------------------------------------- */
+  document.querySelectorAll("[data-skill]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      sound.click();
+      state.skill = btn.getAttribute("data-skill");
+      document.getElementById("finaleSkill").textContent = state.skill;
+      var headline = state.skill === "Web Development"
+        ? "Your new web development skills are paying off."
+        : "Your new marketing skills are paying off.";
+      var flavorEnd = state.skill === "Web Development"
+        ? "via big web development project completions."
+        : "via marketing campaigns you ran for real clients.";
+      document.getElementById("scaleHeadline").textContent = headline;
+      document.getElementById("scaleFlavor").textContent = "Earned +₹50,000 this month "+flavorEnd;
+      goTo("scale");
+
+      var scaleTotalEl = document.getElementById("scaleTotal");
+      var before = state.money;
+      var target = 60000;
+      setTimeout(function(){
+        sound.cash();
+        animateCount(scaleTotalEl, before, target, 1800, function(){
+          confetti(100);
+          sound.achievement();
+          state.money = target;
+          setHeaderMoney(target, 200);
+          document.getElementById("ghLevel").textContent = "Level 4 · Creator";
+          toast("Achievement: Skill Master", "🧠");
+          document.getElementById("scaleContinueBtn").style.display = "inline-flex";
+        });
+      }, 500);
+    });
+  });
+
+  document.getElementById("scaleContinueBtn").addEventListener("click", function(){
+    sound.click();
+    goTo("business");
+  });
+
+  /* SCENE 10: business unlock */
+  document.querySelector('[data-action="go-finale"]').addEventListener("click", function(){
+    sound.levelup();
+    document.getElementById("ghLevel").textContent = "Level 5 · Clan Leader";
+    toast("Achievement: Business Owner", "🏢");
+    goTo("finale");
+    setTimeout(function(){ confetti(140); }, 300);
+  });
+
+  /* Download CTA click sound (navigation itself is handled by the anchor href) */
+  document.getElementById("downloadBtn").addEventListener("click", function(){
+    sound.achievement();
+  });
+
+})();
+</script>
 </body>
 </html>
