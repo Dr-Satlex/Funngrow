@@ -1,0 +1,7 @@
+# Funngro — robots.txt
+# https://www.funngro.com/robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.funngro.com/sitemap.xml
