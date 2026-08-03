@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Core SEO Meta Tags -->
+    <title>Earn Money Online for Students in India | Funngro</title>
+    <meta name="description" content="Complete real client projects, learn professional skills, and start freelancing before college. Your future starts today with Funngro.">
+    <meta name="keywords" content="Earn money as a student, Student freelancing India, Paid internships for teenagers, Teen freelancing platform">
+    <link rel="canonical" href="https://www.funngro.com/">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Earn Your First Income Before You Turn 18">
+    <meta property="og:description" content="Experience a 5-minute playable journey of your future freelance career.">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Funngro",
+      "url": "https://www.funngro.com",
+      "logo": "https://www.funngro.com/assets/svg/funngro-logo.svg",
+      "sameAs": [
+        "https://www.instagram.com/fun.n.gro",
+        "https://www.linkedin.com/company/funngro/",
+        "https://www.youtube.com/@funngro_India",
+        "https://x.com/funngroofficial",
+        "https://www.facebook.com/funngro"
+      ]
+    }
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- External Libraries: GSAP, CountUp, Howler -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" defer></script>
+    
+    <!-- Application Logic -->
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <main id="game-container">
+        
+        <!-- Scene 1: The Beginning -->
+        <section id="scene-1" class="scene active" aria-label="Introduction">
+            <div class="content-wrapper">
+                <h1 class="sr-only">Earn Money Online for Students with Funngro</h1>
+                <p class="hero-text" aria-hidden="true">
+                    <span class="word">Every</span> <span class="word">entrepreneur...</span><br>
+                    <span class="word">Every</span> <span class="word">freelancer...</span><br>
+                    <span class="word">Every</span> <span class="word">founder...</span><br>
+                    <span class="word">earned</span> <span class="word">their</span> <span class="word">first</span> <span class="word">rupee</span> <span class="word">someday.</span>
+                </p>
+                <h2 class="hero-subtext">Today... is yours.</h2>
+                <button id="btn-begin" class="primary-btn pulse-hover">Begin Your Journey</button>
+            </div>
+        </section>
+
+        <!-- Scene 2: Identity -->
+        <section id="scene-2" class="scene hidden" aria-label="Enter your identity">
+            <div class="content-wrapper">
+                <div class="robot-dialogue">
+                    <p>Hey future entrepreneur 👋</p>
+                    <p>What's your name?</p>
+                </div>
+                <input type="text" id="player-name" placeholder="Type your name..." autocomplete="off">
+                <button id="btn-name-submit" class="primary-btn">Continue</button>
+            </div>
+        </section>
+
+        <!-- Scene 3: Reality Check -->
+        <section id="scene-3" class="scene hidden" aria-label="Reality Check">
+            <div class="content-wrapper">
+                <div class="robot-dialogue">
+                    <p>One honest question, <span id="display-name-reality"></span>...</p>
+                    <p>How much do you earn every month right now?</p>
+                </div>
+                <div class="card-grid">
+                    <button class="choice-card" id="btn-earn-nothing">
+                        <span class="emoji">😕</span>
+                        <span>Nothing yet</span>
+                    </button>
+                    <button class="choice-card" id="btn-earn-enough">
+                        <span class="emoji">😎</span>
+                        <span>Enough to pay for myself</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 4 & 5: Dashboard & Projects -->
+        <section id="scene-4" class="scene hidden" aria-label="Your Dashboard">
+            <header class="dashboard-header">
+                <div class="avatar-info">
+                    <span id="display-name" class="font-bold">Player</span> | <span id="display-level">Level 1 Intern</span>
+                </div>
+                <div class="money-container" aria-live="polite">
+                    <span>₹</span><span id="money-counter">0</span>
+                </div>
+            </header>
+            
+            <div class="project-board">
+                <div id="achievement-toast" class="toast hidden"></div>
+                <h2>Available Projects</h2>
+                <button id="btn-complete-project" class="action-btn">
+                    📨 Complete Toffee Project
+                </button>
+                <button id="btn-next-phase" class="primary-btn hidden mt-2">
+                    Upgrade Your Skills
+                </button>
+            </div>
+        </section>
+
+        <!-- Scene 9: Finale & Footer -->
+        <section id="scene-finale" class="scene hidden" aria-label="Congratulations">
+            <div class="content-wrapper finale-wrapper">
+                <h2>Congratulations!</h2>
+                <p>You've experienced the first steps of your career.</p>
+                
+                <a href="https://play.google.com/store/apps/details?id=com.funngro" target="_blank" rel="noopener noreferrer" class="download-btn pulse-anim">
+                    START EARNING TODAY
+                </a>
+            </div>
+
+            <!-- SEO Optimized Footer -->
+            <footer class="game-footer">
+                <section aria-labelledby="social-heading">
+                    <h2 id="social-heading" class="sr-only">Follow Funngro</h2>
+                    <nav aria-label="Funngro Social Media" class="social-nav">
+                        <ul class="social-list">
+                            <li><a href="https://www.instagram.com/fun.n.gro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a></li>
+                            <li><a href="https://www.linkedin.com/company/funngro/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a></li>
+                            <li><a href="https://www.youtube.com/@funngro_India" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a></li>
+                            <li><a href="https://x.com/funngroofficial" target="_blank" rel="noopener noreferrer" aria-label="X">X</a></li>
+                            <li><a href="https://www.facebook.com/funngro" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </footer>
+        </section>
+
+    </main>
+</body>
+</html>
